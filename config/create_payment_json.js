@@ -26,7 +26,7 @@ module.exports = {
                 currency: "BRL",
                 total: "899.00"
             },
-            description: "Comprar uma cadeirinho do carro para sair"
+            description: "Comprar uma cadeirinha do carro para sair"
         }
     ]
 };

@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const server = express();
 const nunjucks = require("nunjucks");
 
-const HomeController = require("./controllers/HomeController")
-const PayPalController = require("./controllers/PayPalController")
+const HomeController = require("./controllers/HomeController");
+const PayPalController = require("./controllers/PayPalController");
 
 const { HOST, PORT } = process.env;
 
@@ -15,7 +15,7 @@ nunjucks.configure("views", {
     express: server
 });
 
-server.use(express.static('public'));
+server.use(express.static("public"));
 server.use(bodyParser.urlencoded({ extended: true }));
 
 server.get("/", HomeController.show);
